@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnPayMode = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.BtnExit);
             this.panel1.Controls.Add(this.BtnPayMode);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -65,12 +67,23 @@
             this.BtnPayMode.TabIndex = 3;
             this.BtnPayMode.UseVisualStyleBackColor = true;
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackgroundImage = global::Supermarket.mvp.Properties.Resources.cerrar;
+            this.BtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnExit.Location = new System.Drawing.Point(12, 315);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(173, 65);
+            this.BtnExit.TabIndex = 4;
+            this.BtnExit.UseVisualStyleBackColor = true;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "MainView";
             this.Text = "Supermarket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -85,5 +98,7 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Button BtnPayMode;
+        private Button button1;
+        private Button BtnExit;
     }
 }

@@ -121,6 +121,7 @@
             // 
             // BtnClose
             // 
+            this.BtnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClose.Image = global::Supermarket.mvp.Properties.Resources.cerrar;
             this.BtnClose.Location = new System.Drawing.Point(681, 248);
             this.BtnClose.Name = "BtnClose";
@@ -130,6 +131,7 @@
             // 
             // BtnDelete
             // 
+            this.BtnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnDelete.Image = global::Supermarket.mvp.Properties.Resources.delete;
             this.BtnDelete.Location = new System.Drawing.Point(681, 177);
             this.BtnDelete.Name = "BtnDelete";
@@ -139,6 +141,7 @@
             // 
             // BtnEdit
             // 
+            this.BtnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnEdit.Image = global::Supermarket.mvp.Properties.Resources.edit;
             this.BtnEdit.Location = new System.Drawing.Point(681, 116);
             this.BtnEdit.Name = "BtnEdit";
@@ -148,6 +151,7 @@
             // 
             // BtnNew
             // 
+            this.BtnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnNew.Image = global::Supermarket.mvp.Properties.Resources._new;
             this.BtnNew.Location = new System.Drawing.Point(681, 45);
             this.BtnNew.Name = "BtnNew";
@@ -160,6 +164,9 @@
             this.DgPayMode.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.DgPayMode.AllowUserToAddRows = false;
             this.DgPayMode.AllowUserToDeleteRows = false;
+            this.DgPayMode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgPayMode.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgPayMode.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgPayMode.Location = new System.Drawing.Point(8, 61);
@@ -171,15 +178,18 @@
             // 
             // BtnSearch
             // 
-            this.BtnSearch.Image = global::Supermarket.mvp.Properties.Resources.search;
+            this.BtnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSearch.Image = global::Supermarket.mvp.Properties.Resources.search_small;
             this.BtnSearch.Location = new System.Drawing.Point(474, 14);
             this.BtnSearch.Name = "BtnSearch";
-            this.BtnSearch.Size = new System.Drawing.Size(54, 44);
+            this.BtnSearch.Size = new System.Drawing.Size(43, 41);
             this.BtnSearch.TabIndex = 2;
             this.BtnSearch.UseVisualStyleBackColor = true;
             // 
             // TxtSearch
             // 
+            this.TxtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtSearch.Location = new System.Drawing.Point(7, 32);
             this.TxtSearch.Name = "TxtSearch";
             this.TxtSearch.PlaceholderText = "Data to search";
