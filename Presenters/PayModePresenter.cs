@@ -27,6 +27,17 @@ namespace Supermarket.mvp.Presenters
             this.view.DeleteEvent += DeleteSelectedPayMode;
             this.view.SaveEvent += SavePayMode;
             this.view.CancelEvent += CancelAction;
+
+            this.view.SetPayModeListBildingSource(payModeBindingSource);
+
+            loadAllPayModeList();
+
+            this.view.Show();
+        }
+        private void loadAllPayModeList()
+        {
+            payModeList = repository.GetAll();
+            payModeBindingSource.DataSource = payModeList;
         }
 
         private void CancelAction(object? sender, EventArgs e)
@@ -56,7 +67,16 @@ namespace Supermarket.mvp.Presenters
 
         private void SearchPayMode(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            bool emptyValue = String.IsNullOrWhiteSpace(this.view.SearchValue);
+            if(emptyValue==false) 
+            {
+                payModeList=repository.GetByValue(this.view.SearchValue);
+            }
+            else
+            {
+                payModeList = repository.GetAll();
+            }
+            payModeBindingSource.DataSource = payModeList;
         }
     }
 }

@@ -157,9 +157,12 @@
             // 
             // DgPayMode
             // 
+            this.DgPayMode.AllowUserToAddRows = false;
+            this.DgPayMode.AllowUserToDeleteRows = false;
             this.DgPayMode.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgPayMode.Location = new System.Drawing.Point(8, 61);
             this.DgPayMode.Name = "DgPayMode";
+            this.DgPayMode.ReadOnly = true;
             this.DgPayMode.RowTemplate.Height = 25;
             this.DgPayMode.Size = new System.Drawing.Size(454, 253);
             this.DgPayMode.TabIndex = 3;
