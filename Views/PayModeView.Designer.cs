@@ -41,7 +41,7 @@
             this.BtnSearch = new System.Windows.Forms.Button();
             this.TxtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.s = new System.Windows.Forms.TabPage();
+            this.tabPagePayModeList = new System.Windows.Forms.TabPage();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.TxtPayModeObservation = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPagePayModeDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgPayMode)).BeginInit();
-            this.s.SuspendLayout();
+            this.tabPagePayModeList.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,7 +93,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPagePayModeDetail);
-            this.tabControl1.Controls.Add(this.s);
+            this.tabControl1.Controls.Add(this.tabPagePayModeList);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 100);
             this.tabControl1.Name = "tabControl1";
@@ -205,23 +205,23 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Search Pay Mode";
             // 
-            // s
+            // tabPagePayModeList
             // 
-            this.s.Controls.Add(this.BtnCancel);
-            this.s.Controls.Add(this.BtnSave);
-            this.s.Controls.Add(this.TxtPayModeObservation);
-            this.s.Controls.Add(this.label5);
-            this.s.Controls.Add(this.label4);
-            this.s.Controls.Add(this.TxtPayModeName);
-            this.s.Controls.Add(this.TxtPayModeId);
-            this.s.Controls.Add(this.label3);
-            this.s.Location = new System.Drawing.Point(4, 24);
-            this.s.Name = "s";
-            this.s.Padding = new System.Windows.Forms.Padding(3);
-            this.s.Size = new System.Drawing.Size(792, 322);
-            this.s.TabIndex = 1;
-            this.s.Text = "PayModeDetail";
-            this.s.UseVisualStyleBackColor = true;
+            this.tabPagePayModeList.Controls.Add(this.BtnCancel);
+            this.tabPagePayModeList.Controls.Add(this.BtnSave);
+            this.tabPagePayModeList.Controls.Add(this.TxtPayModeObservation);
+            this.tabPagePayModeList.Controls.Add(this.label5);
+            this.tabPagePayModeList.Controls.Add(this.label4);
+            this.tabPagePayModeList.Controls.Add(this.TxtPayModeName);
+            this.tabPagePayModeList.Controls.Add(this.TxtPayModeId);
+            this.tabPagePayModeList.Controls.Add(this.label3);
+            this.tabPagePayModeList.Location = new System.Drawing.Point(4, 24);
+            this.tabPagePayModeList.Name = "tabPagePayModeList";
+            this.tabPagePayModeList.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePayModeList.Size = new System.Drawing.Size(792, 322);
+            this.tabPagePayModeList.TabIndex = 1;
+            this.tabPagePayModeList.Text = "PayModeDetail";
+            this.tabPagePayModeList.UseVisualStyleBackColor = true;
             // 
             // BtnCancel
             // 
@@ -280,8 +280,11 @@
             // 
             this.TxtPayModeId.Location = new System.Drawing.Point(26, 41);
             this.TxtPayModeId.Name = "TxtPayModeId";
+            this.TxtPayModeId.ReadOnly = true;
             this.TxtPayModeId.Size = new System.Drawing.Size(100, 23);
             this.TxtPayModeId.TabIndex = 1;
+            this.TxtPayModeId.Text = "0";
+            this.TxtPayModeId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -308,8 +311,8 @@
             this.tabPagePayModeDetail.ResumeLayout(false);
             this.tabPagePayModeDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgPayMode)).EndInit();
-            this.s.ResumeLayout(false);
-            this.s.PerformLayout();
+            this.tabPagePayModeList.ResumeLayout(false);
+            this.tabPagePayModeList.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -329,7 +332,7 @@
         private Button BtnSearch;
         private TextBox TxtSearch;
         private Label label2;
-        private TabPage s;
+        private TabPage tabPagePayModeList;
         private Button BtnCancel;
         private Button BtnSave;
         private TextBox TxtPayModeObservation;

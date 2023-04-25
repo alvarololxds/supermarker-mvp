@@ -1,0 +1,35 @@
+[33mcommit 7b5d287d71764a1b575363df142f2fdd9ba8ac5d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Sat Apr 22 13:15:51 2023 -0500
+
+    Adjusments to views
+
+[33mcommit 37b6137b9b6b303140ce8e46efbea2d45f8f69d4[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Sat Apr 22 12:04:11 2023 -0500
+
+    Main View
+
+[33mcommit 0e089a1e851f0c3c4262d05cd6ed8fbcbe936af0[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Sat Apr 22 11:06:26 2023 -0500
+
+    Pay Mode Repository - Search
+
+[33mcommit 9d42e89ab04cdf36a01b4024b336c045c1bcab98[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Tue Apr 18 16:47:09 2023 -0500
+
+    Pay Mode Presenter
+
+[33mcommit 2d59e3401cd8a58ace94d07614365b6033499cf4[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Sat Apr 15 15:45:21 2023 -0500
+
+    Pay Mode View
+
+[33mcommit 62875ffdbcb922743f53d4a234b3595cb6303973[m
+Author: Alvaro Gustavo Ordoñez Sierra <alvarotavollo@gmail.com>
+Date:   Sat Apr 15 14:12:47 2023 -0500
+
+    Initial Project

@@ -3,6 +3,7 @@ using Supermarket.mvp.Models;
 using Supermarket.mvp._Repositories;
 using Supermarket.mvp.Properties;
 using Supermarket.mvp.Presenters;
+using System.ComponentModel;
 
 namespace Supermarket.mvp
 {
@@ -21,6 +22,8 @@ namespace Supermarket.mvp
             IMainView view=new MainView();
             new MainPresenter(view, sqlConnectionString);
             Application.Run((Form) view);
+
+           
         }
     }
 }

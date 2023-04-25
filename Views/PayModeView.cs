@@ -27,14 +27,55 @@ namespace Supermarket.mvp.Views
         private void AssociateAndRaiseViewEvents()
         {
             BtnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+            BtnNew.Click += delegate {
+                AddNewEvent?.Invoke(this, EventArgs.Empty);
+                tabControl1.TabPages.Remove(tabPagePayModeList);
+            tabControl1.TabPages.Add(tabPagePayModeDetail);
+                tabPagePayModeDetail.Text = "Edit Pay Mode";
+            
+            
+            };
 
-            TxtSearch.KeyDown += (s, e) =>
+                BtnEdit.Click += delegate { EditEvent?.Invoke(this, EventArgs.Empty);
+
+                    tabControl1.TabPages.Remove(tabPagePayModeList);
+                    tabControl1.TabPages.Add(tabPagePayModeDetail);
+                    tabPagePayModeDetail.Text = "Edit Pay Mode";
+                
+                
+                };
+                BtnDelete.Click += delegate { var result = MessageBox.Show("Are you sure want to delete the selected Pay Mode", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); 
+                
+                    if(result == DialogResult.Yes) 
+                    {
+                        DeleteEvent?.Invoke(this, EventArgs.Empty);
+                        MessageBox.Show(Message);
+                    }
+                };
+                BtnSave.Click += delegate { SaveEvent?.Invoke(this, EventArgs.Empty); 
+                
+                if(isSuccessful)
+                    {
+                        tabControl1.TabPages.Remove(tabPagePayModeDetail);
+                        tabControl1.TabPages.Add(tabPagePayModeList);
+                    }
+                    MessageBox.Show(Message);
+                };
+                BtnCancel.Click += delegate { CancelEvent?.Invoke(this, EventArgs.Empty);
+
+                    tabControl1.TabPages.Remove(tabPagePayModeDetail);
+                    tabControl1.TabPages.Add(tabPagePayModeList);
+                
+                };
+
+                TxtSearch.KeyDown += (s, e) =>
             {
                 if (e.KeyCode == Keys.Enter)
                 {
                     SearchEvent?.Invoke(this, EventArgs.Empty);
                 }
             };
+            BtnNew.Click += delegate { AddNewEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         public string PayModeId
@@ -81,6 +122,7 @@ namespace Supermarket.mvp.Views
         public event EventHandler DeleteEvent;
         public event EventHandler SaveEvent;
         public event EventHandler CancelEvent;
+
 
         public void SetPayModeListBildingSource(BindingSource payModeList)
         {
